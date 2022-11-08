@@ -1,0 +1,121 @@
+@import './reset.css';
+
+:root {
+    --app-dark-bg:#1a1d28;
+    --app-light-bg: #f0f4f6;
+    --app-red: #cc231e;
+    --app-green:#34a65f;
+    --app-purple: #770477;
+    --app-blue:#3c57ff;
+    --app-red-hover: #c41b15;
+    --app-blue-hover:#364ee6;
+}
+
+body {
+    background-color: var(--app-light-bg);
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.row {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin-inline: auto;
+}
+
+
+.box-1 {
+    background-color: var(--app-blue);
+}
+
+.box-2 {
+    background-color: var(--app-green);
+}
+
+.box-3 {
+    background-color: var(--app-purple);
+}
+
+.box-4 {
+    background-color: var(--app-red);
+}
+
+button {
+    width: 150px;
+    height: 46px;
+    text-align: center;
+    background-color: var(--app-red);
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: all 0.25s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: var(--app-red-hover);
+}
+
+.display {
+    background-color: var(--app-blue);
+}
+
+.display:hover {
+    background-color: var(--app-blue-hover);
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+    .box {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 960px) {
+    .box {
+        width: 330px;
+        height: 250px;
+    }   
+}
+
+@media (max-width: 750px) {
+    .box {
+        width: 450px;
+        height: 280px;
+    } 
+}
+
+@media (max-width: 500px) {
+    .box {
+        width: 350px;
+        height: 300px;
+    }
+}
