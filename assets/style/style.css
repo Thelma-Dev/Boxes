@@ -33,15 +33,15 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+    overflow: hidden;
+    min-width:  calc(25% - 15px, 1080px);
     height: auto;
-    gap: 15px;
+    row-gap: 15px;
 }
 
 .box {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     margin-inline: auto;
 }
 
@@ -60,6 +60,13 @@ h1 {
 
 .box-4 {
     background-color: var(--app-red);
+}
+
+
+.button {
+    width: 100px;
+    height: 92px;
+    margin: 10px auto;
 }
 
 button {
@@ -83,33 +90,33 @@ button:hover {
     background-color: var(--app-red-hover);
 }
 
-.display {
-    background-color: var(--app-blue);
-}
-
-.display:hover {
-    background-color: var(--app-blue-hover);
-}
 
 /* Media queries */
 @media (max-width: 1200px) {
     .box {
-        width: 200px;
-        height: 200px;
+        width: 290px;
+        height: 240px;
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
     .box {
-        width: 330px;
+        width: 380px;
         height: 250px;
     }   
+}
+
+@media (max-width: 800px) {
+    .box {
+        width: 400px;
+        height: 250px;
+    } 
 }
 
 @media (max-width: 750px) {
     .box {
         width: 450px;
-        height: 280px;
+        height: 250px;
     } 
 }
 
