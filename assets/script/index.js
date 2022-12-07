@@ -12,3 +12,5 @@ btn.addEventListener("click", function () {
     boxes[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
   }
 });
+
+Get me water;
